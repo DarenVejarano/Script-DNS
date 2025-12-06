@@ -1,0 +1,16 @@
+$TTL 60
+@       IN SOA ns01.ufotable.cat. admin.ufotable.cat. (
+                2008052005 ; Serial
+                120         ; Refresh 2m
+                60          ; Retry 1m
+                86400       ; Expire 1 day
+                60 )        ; Minimum TTL 1m
+
+        IN NS ns01.ufotable.cat.
+        IN NS ns02.ufotable.cat.
+
+est01   IN A 10.18.40.204
+est02   IN A 10.18.40.205
+est03   IN A 10.18.40.206
+est04   IN A 10.18.40.207
+est05   IN A 10.18.40.208
