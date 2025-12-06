@@ -1,0 +1,14 @@
+zone "ufotable.cat" {
+    type master;
+    file "/etc/bind/db.ufotable.cat";
+};
+
+zone "estacions.ufotable.cat" {
+    type master;
+    file "/etc/bind/db.estacions.ufotable.cat";
+};
+
+zone "40.18.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.40.18.10.rev";
+};
