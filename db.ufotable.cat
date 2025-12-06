@@ -1,0 +1,31 @@
+$TTL 60
+@       IN SOA ns01.ufotable.cat. admin.ufotable.cat. (
+                2008052008 ; Serial
+                120         ; Refresh 2m
+                60          ; Retry 1m
+                86400       ; Expire 1 day
+                60 )        ; Minimum TTL 1m
+
+; Servidores DNS
+        IN NS   ns01.ufotable.cat.
+        IN NS   ns02.ufotable.cat.
+
+; Servidores MX
+        IN MX 10 mail01.ufotable.cat.
+        IN MX 20 mail02.ufotable.cat.
+
+; Registros A principales
+ns01    IN A    192.168.145.22
+ns02    IN A    192.168.145.23
+mail01  IN A    192.168.145.24
+mail02  IN A    192.168.145.25
+web     IN A    192.168.145.26
+file    IN A    192.168.145.27
+
+; Alias
+www     IN CNAME web.ufotable.cat.
+ftp     IN CNAME file.ufotable.cat.
+
+; Delegación subzona estacions
+estacions   IN NS ns01.ufotable.cat.
+estacions   IN NS ns02.ufotable.cat.
