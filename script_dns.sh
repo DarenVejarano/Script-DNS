@@ -18,5 +18,4 @@ named-checkzone estacions.ufotable.cat /etc/bind/db.estacions.ufotable.cat
 named-checkzone 40.18.10.in-addr.arpa /etc/bind/db.40.18.10.rev
 
 systemctl restart bind9
-systemctl enable bind9
 
